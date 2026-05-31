@@ -27,7 +27,7 @@
 
     <div id="start-page">
         <h1>📈 期末歐趴率檢測</h1>
-        <p>測測看你的期末生存機率有多高！</p>
+        <p>測測你在期末的生存機率有多高！</p>
         <button class="btn" onclick="startQuiz()">開始測驗</button>
     </div>
 
@@ -39,13 +39,13 @@
     <div id="form-page" class="hidden">
         <div style="text-align: center; margin-bottom: 20px;">
             <h3 style="color: #689f38;">你的歐趴率已計算完成</h3>
-            <p>不管你現在是：穩穩歐趴型、奮戰衝刺型、靠奇蹟生存型。<br>
+            <p>不管你現在是：穩穩歐趴型、奮戰衝刺型、靠奇蹟生存型，<br>
             來領取歐趴糖，為你加滿期末考的運氣！</p>
             
             <form id="collect-form">
                 <input type="text" id="name" placeholder="姓名" required>
                 <input type="text" id="dept" placeholder="系級" required>
-                <input type="tel" id="phone" placeholder="聯絡電話(僅用於此活動使用)" required>
+                <input type="tel" id="phone" placeholder="聯絡電話(僅用於領取使用)" required>
                 <select id="time" required>
                     <option value="" disabled selected>選擇領取時間</option>
                     <option value="6/2(二) 19:00 管院一樓">6/2(二) 19:00 管院一樓</option>
@@ -57,7 +57,7 @@
                     <option value="6/11(四) 19:00 管院一樓">6/11(四) 19:00 管院一樓</option>
                     <option value="以上都不行，另外約時間領取">以上都不行，另外約時間領取</option>
                 </select>
-                <button type="submit" class="btn" id="submit-btn">立即預約領取，解鎖歐趴率</button>
+                <button type="submit" class="btn" id="submit-btn">立即預約領取，解鎖查看歐趴率</button>
             </form>
         </div>
         
@@ -75,7 +75,7 @@
             </p>
         </div>
         <div class="social-section">
-            <p style="font-size: 0.9rem; color: #666;">追蹤台科大崇德志工社，獲取更多活動資訊：</p>
+            <p style="text-align: center; font-size: 0.9rem; color: #666;">追蹤台科大崇德志工社，獲取更多活動資訊：</p>
             <div class="social-links">
                 <a href="https://www.instagram.com/ntustcdvc?igsh=M2pmNTJiMGpvbnRl" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
@@ -106,7 +106,7 @@
         { q: "Q2. 本週平均每天睡多久？", opts: [{t:"7小時以上", s:20}, {t:"6~7小時", s:15}, {t:"5~6小時", s:10}, {t:"4~5小時", s:5}, {t:"不知道今天星期幾", s:0}] },
         { q: "Q3. 面對最難的那科，你現在的心情是？", opts: [{t:"穩穩的", s:20}, {t:"還有救", s:15}, {t:"有點抖", s:10}, {t:"不太妙", s:5}, {t:"已經開始找重修資訊", s:0}] },
         { q: "Q4. 考前一週的你通常是？", opts: [{t:"提前規劃型", s:20}, {t:"穩定推進型", s:15}, {t:"看心情型", s:10}, {t:"截止日前爆發型", s:5}, {t:"奇蹟發生型", s:0}] },
-        { q: "Q5. 期末週最常出現的是？", opts: [{t:"圖書館", s:15}, {t:"實驗室", s:12}, {t:"宿舍書桌", s:10}, {t:"咖啡廳", s:8}, {t:"床上", s:0}] }
+        { q: "Q5. 期末週最常出現的地方是？", opts: [{t:"圖書館", s:15}, {t:"實驗室", s:15}, {t:"宿舍書桌", s:15}, {t:"咖啡廳", s:15}, {t:"床上", s:0}] }
     ];
 
     let currentQ = 0, totalScore = 0;
